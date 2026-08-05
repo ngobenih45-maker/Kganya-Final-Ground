@@ -1140,3 +1140,40 @@ height:320px;
 }
 
 }
+/* Scroll Reveal Animation */
+
+.about,
+.why-card,
+.package-card,
+.service-card,
+.gallery-item,
+.testimonial-card,
+.stat-box,
+.contact-container,
+.faq details{
+opacity:0;
+transform:translateY(60px);
+transition:all .8s ease;
+}
+
+.about.active,
+.why-card.active,
+.package-card.active,
+.service-card.active,
+.gallery-item.active,
+.testimonial-card.active,
+.stat-box.active,
+.contact-container.active,
+.faq details.active{
+opacity:1;
+transform:translateY(0);
+}
+
+/* Active Navigation Link */
+
+.navbar ul li a.active{
+color:var(--secondary);
+font-weight:700;
+border-bottom:2px solid var(--secondary);
+padding-bottom:5px;
+}
