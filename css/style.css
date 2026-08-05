@@ -692,3 +692,60 @@ z-index:99999;
 transition:.2s;
 
 }
+.hero-content h1{
+
+animation:slideUp 1.5s ease;
+
+}
+
+.hero-content p{
+
+animation:fadeUp 2s ease;
+
+}
+
+.hero-buttons{
+
+animation:fadeUp 2.5s ease;
+
+}
+
+@keyframes slideUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(70px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:none;
+
+}
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:none;
+
+}
+
+}
