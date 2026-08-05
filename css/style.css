@@ -749,3 +749,46 @@ transform:none;
 }
 
 }
+.whatsapp-chat{
+
+position:fixed;
+
+right:30px;
+
+bottom:30px;
+
+background:#25D366;
+
+color:white;
+
+padding:15px 25px;
+
+border-radius:50px;
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+font-weight:600;
+
+box-shadow:0 10px 30px rgba(0,0,0,.2);
+
+z-index:999;
+
+transition:.4s;
+
+}
+
+.whatsapp-chat:hover{
+
+transform:scale(1.08);
+
+}
+
+.whatsapp-chat i{
+
+font-size:30px;
+
+}
