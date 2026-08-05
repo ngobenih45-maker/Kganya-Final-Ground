@@ -18,19 +18,21 @@ window.addEventListener("load", () => {
 
 const navbar = document.querySelector(".navbar");
 
-window.addEventListener("scroll", () => {
+window.addEventListener("load", () => {
 
-    if (window.scrollY > 80) {
+    const loader = document.getElementById("loader");
 
-        navbar.style.background = "rgba(11,45,107,.98)";
-        navbar.style.padding = "12px 8%";
-        navbar.style.boxShadow = "0 10px 30px rgba(0,0,0,.25)";
+    if(loader){
 
-    } else {
+        setTimeout(() => {
 
-        navbar.style.background = "rgba(11,45,107,.88)";
-        navbar.style.padding = "18px 8%";
-        navbar.style.boxShadow = "none";
+            loader.style.opacity = "0";
+
+            setTimeout(() => {
+                loader.style.display = "none";
+            },500);
+
+        },1000);
 
     }
 
@@ -214,14 +216,14 @@ gallery.forEach(img=>{
 
 // ================= CONTACT FORM =================
 
-const form=document.querySelector("form");
+const form = document.querySelector("form");
 
-form.addEventListener("submit",(e)=>{
+if (form) {
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
 
-    e.preventDefault();
+        alert("Thank you for contacting Kganya Final Ground Funeral Services. We will contact you shortly.");
 
-    alert("Thank you for contacting Kganya Final Ground Funeral Services. We will contact you shortly.");
-
-    form.reset();
-
-});
+        form.reset();
+    });
+}
