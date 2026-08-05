@@ -671,3 +671,24 @@ RESPONSIVE
     font-size:60px;
 }
 }
+/* Progress Bar */
+
+#progress-bar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+height:5px;
+
+width:0;
+
+background:linear-gradient(90deg,#D4AF37,#FFD700);
+
+z-index:99999;
+
+transition:.2s;
+
+}
