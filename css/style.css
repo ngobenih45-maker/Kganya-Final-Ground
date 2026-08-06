@@ -870,19 +870,7 @@ HERO SECTION
 
 /* HERO SECTION */
 
-body {
-    background-image: linear-gradient(
-        rgba(0,0,0,0.45),
-        rgba(0,0,0,0.45)
-    ),
-    url("images.jpeg");
-
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.overlay{
+.{
     position: absolute;
     top: 0;
     left: 0;
@@ -893,12 +881,14 @@ body {
 }
 
 .hero{
-    position: relative;
-    height: 100vh;
-    background: url("kfg images gpg/hero-bg. jpg.jpeg") center center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position:relative;
+    height:100vh;
+    background:url("../kfg images gpg/hero-bg.jpg") center center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 .hero-content h1{
     font-family: "Cinzel", serif;
